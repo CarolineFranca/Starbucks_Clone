@@ -261,14 +261,107 @@ h2{
     background-position: center;
     background-size: cover;
     height: 600px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 footer{
-    height: 200px;
-    background-color: var(--button);
+    background-color: #333;
     color: #fff;
-    padding-top: 20px;
-    font-size: 20px;
+    padding: 80px;
     text-align: center;
 }   
+
+footer a{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+footer a:hover{
+    color: var(--green);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (min-width: 769px) and (max-width: 1140px)
+{
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 428px) and (max-width: 768px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;    
+    }
+
+    .area1, .area3 {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .area3 {
+        grid-template-columns: 2fr 3fr;
+    }
+
+}
+
+@media  (max-width: 428px){
+
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;    
+    }
+
+    .header--search input{
+        min-width: 30px;
+    }
+
+    .container h1{
+        font-size: 60px;
+        line-height: 58px;
+    }
+
+    h2{
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .banner--images img{
+        width: 90px;
+        border: 5px solid var(--green);
+        margin-right: 10px;
+
+    }
+
+    .area1, 
+    .area2,
+    .area3,
+    .area4{
+        grid-template-columns: 1fr;
+    }
+
+    .area1--content,
+    .area2--content,
+    .area3--content,
+    .area4--content{
+        padding: 40px;
+    }
+
+    .area5--content{
+        height: 200px;
+    }
+
+    footer{
+        font-size: 13px;
+        padding: 20px;
+    }
+
+    footer a{
+        color: var(--green);
+    }
+
+
+
+}
